@@ -8,36 +8,51 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 :root {
   scroll-behavior: smooth;
+  --main-color: #012970;
+  --gray-color:#cfcfcc;
+  --whait-color: #fff;
+  --content: "\f059   السؤال";
+  --content-en: "\f059   Question";
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  scroll-behavior: smooth;
+  background: url(../img/hero-bg.png) top center no-repeat;
+  background-size: cover;
+  
+}
+h1::first-letter,h2::first-letter,h3::first-letter,h4::first-letter,h5::first-letter,h6::first-letter,p::first-letter,span::first-letter{
+text-transform: uppercase;
 }
 
 a {
   color: #4154f1;
-  text-decoration: none;
+  text-decoration: none !important; 
 }
 
 a:hover {
   color: #717ff5;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
 
+
+/**************** New Edit for Home and Login page *******************/
 .h1-style
 {
   font-size: 40px !important;
 }
 .home-style
 {
-  margin-top: 70px ;
+  margin-top: 84px ;
 }
 
 .frame
@@ -46,9 +61,9 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: contain;
   /*height: 58.5vh;*/
-  padding-bottom: 49.24%;
   background-position: center;
-  
+  aspect-ratio: 1/.8;
+
   
   position: relative;
 }
@@ -56,9 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 {
   position: absolute;
   top: 33%;
-  left: 33%;
-  border-radius: 20%;
-  border: 1px solid #000;
+  left: 43%;
+  
 }
 .material-symbols-outlined {
   padding: 10px;
@@ -69,13 +83,36 @@ h1, h2, h3, h4, h5, h6 {
   'opsz' 48
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/***************** End New Edit for Home and Login page ********************/
+
+
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
+
 
 .section-header {
   text-align: center;
@@ -189,18 +226,23 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 .header {
+  position: relative;
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: transparent !important;
+
 }
-.header.header-scrolled {
+/* .header.header-scrolled {
   background: #fff;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-}
+} */
 .header .logo {
   line-height: 0;
+  padding-right: 20rem;
 }
 .header .logo img {
   max-height: 40px;
@@ -328,7 +370,8 @@ section {
   font-size: 28px;
   cursor: pointer;
   display: none;
-  line-height: 0;
+  line-height: 1
+  ;
   transition: 0.5s;
 }
 .mobile-nav-toggle.bi-x {
@@ -416,14 +459,11 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
-  background-size: cover;
+  
 }
 .hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #012970;
+  
 }
 .hero h2 {
   color: #444444;
@@ -474,6 +514,13 @@ section {
   .hero .hero-img img {
     width: 80%;
   }
+  #custom-dropdown-menu{
+    transition: all 0.5s ease; 
+    width: 100%;
+    box-shadow: none;
+    background-color: #cfcfcc;
+}
+
 }
 @media (max-width: 768px) {
   .hero {
@@ -488,6 +535,13 @@ section {
   .hero .hero-img img {
     width: 100%;
   }
+  #custom-dropdown-menu{
+    transition: all 0.5s ease; 
+    width: 100%;
+    box-shadow: none;
+    background-color: #cfcfcc;
+}
+
 }
 
 /*--------------------------------------------------------------

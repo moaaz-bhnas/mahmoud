@@ -1,0 +1,296 @@
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+#avtar-img{
+    margin: 0 ;
+}
+
+
+/*--------------------------------------------------------------
+# modal-content
+--------------------------------------------------------------*/
+#modal-content{
+    max-width: 60rem;
+    height: 50rem;
+}
+.modal-dialog{
+    margin: auto;
+}
+
+/*--------------------------------------------------------------
+# test-style
+--------------------------------------------------------------*/
+.test-style #hero{
+    min-height:80vh ;
+}
+.test-style #hero h2{
+    /* padding: 3rem 0 2rem;  */
+    font-weight: 700;
+     color: var(--main-color);
+    }
+.test-style #hero h3{
+   font-size: 2rem;
+    }
+@media (min-width: 1024px) {
+
+  }
+
+  @media (max-width: 991px) {
+   
+    .test-style #hero h2{
+        padding-top: 0; 
+     
+        }
+  }
+
+
+/*--------------------------------------------------------------
+# test-result-style
+--------------------------------------------------------------*/
+
+
+.test-result-style #hero {
+    height: fit-content;
+    min-height: 100vh;
+    padding: 0;
+     
+    }
+
+
+
+.test-result-style #hero h2{
+    padding: 1rem 0 .5rem; 
+    font-weight: 700;
+     color: var(--main-color);
+    }
+.test-result-style #hero h3{
+   font-size: 2rem;
+    }
+.test-result-style .review-btn {
+   color: var(--main-color);
+   background-color: var(--whait-color);
+   border:1px solid var(--main-colorx) ;
+    }
+
+
+
+@media (min-width: 1024px) {
+
+  }
+
+  @media (max-width: 991px) {
+   
+    .test-result-style #hero h2{
+        padding-top: 0; 
+     
+        }
+  }
+
+
+  /*--------------------------------------------------------------
+# exam-style
+--------------------------------------------------------------*/
+
+
+.exam-style #hero {
+    min-height: 100vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+        
+    }
+.exam-style .c1 {
+    position: relative;
+}
+.exam-style .c1 #que-mark{
+    position: absolute;    
+    width: fit-content;
+    background-color: #cfcfcc;
+    padding: 1rem 5rem; 
+    position: absolute;
+    top: -5%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color); 
+
+}
+.exam-style #hero .c2 #box_buttons a ,.c2 #box_buttons button{
+        width: 5rem;
+}
+    
+.exam-style #hero .c1 .card{
+    margin: 2rem 0;
+    box-shadow:  1px 1px 10px var(--gray-color);
+        
+    }
+.exam-style #hero .question h2{
+    padding: 2rem; 
+    font-weight: 700;
+    color: var(--main-color);
+    
+    }
+.exam-style #hero .question h2::after{
+    content: "";
+    display: block;
+    width: 80%;
+  background-color: var(--main-color);
+  height: 2px;
+    margin: 2rem auto; 
+    border-radius: 10px;
+    }
+
+.exam-style #hero .answers input{
+    margin: 2rem 2rem ;
+   height: 15px;
+   width: 15px;
+
+    }
+.exam-style #hero .answers label{
+   font-size: 2rem;
+   transition: all 0.5s ease;
+    }
+.exam-style #hero .answers label:hover{
+  color: var(--main-color);
+    }
+
+.exam-style #hero .answer p{
+   padding-left: 2rem;
+   font-size: 2rem;
+}
+.exam-style #hero .answer a{
+   cursor: pointer;
+}
+.exam-style #hero .buttems{
+    margin-top: 3rem;
+}
+.exam-style #hero .buttems button{
+font-size: 2rem;
+padding: 1rem;
+flex: 1;
+transition: all .5s ease;
+border: 1px solid transparent;
+}
+
+.exam-style #hero .buttems #next-btn{
+background-color: var(--main-color);
+color: var(--whait-color);
+}
+
+.exam-style #hero .buttems #next-btn:hover{
+background-color: var(--whait-color);
+color: var(--main-color);
+border: 1px solid var(--main-color);
+}
+
+.exam-style #hero .buttems #prev-btn{
+    background-color: var(--whait-color);
+    border: 1px solid var(--main-color);
+    color: #111;
+    }
+.exam-style #hero .buttems #prev-btn:hover{
+    background-color: var(--main-color);
+    color:var(--whait-color);
+    border: 1px solid #111;
+
+    }
+    .exam-style #hero .buttems #next-btn:disabled,
+    .exam-style #hero .buttems #next-btn:disabled:hover{
+    background-color: var(--gray-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+
+    } 
+
+    .exam-style #hero .buttems #prev-btn:disabled,
+    .exam-style #hero .buttems #prev-btn:disabled:hover{
+    background-color: var(--gray-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+
+    } 
+    
+@media screen and (max-width: 991px) {
+    .c1{
+        order: 2;
+        
+    }    
+.c2{
+    width: fit-content;
+    height: fit-content;
+  margin-top: -8rem;
+  margin-bottom: 2rem;
+}
+}
+@media screen and (max-width: 768px) {
+    .c1 .card .answers{
+        align-self: flex-start;
+    }
+    .c1{
+        order: 2;
+    }    
+    .c2{
+        margin-top: -9rem;
+      margin-bottom: 3rem;
+    }
+
+}
+
+
+.exam-style #hero .c1 .score-table {
+  background-color: var(--whait-color);
+  padding: 1rem;
+  box-shadow:  1px 1px 10px var(--gray-color);
+  color: var(--main-color);
+}
+.exam-style #hero .c2 {
+   padding: 2rem 0 ;
+   height: fit-content;
+   background-color: var(--whait-color);
+   box-shadow:  1px 1px 10px var(--gray-color);
+}
+span #time_taken {
+   font-size: 2rem;
+}
+
+.exam-style #hero .c2 a{
+    color: var(--gray-color);
+}
+.exam-style #hero .c2 a ,.exam-style #hero .c2 button{
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+.exam-style #hero .c2 a:hover ,.exam-style #hero .c2 button:hover{
+   background-color: var(--main-color);
+   color: var(--whait-color);
+}
+.c1 button{
+    background-color: var(--main-color);
+    color: var(--whait-color);
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+
+.c1 button:hover{
+    background-color: var(--whait-color);
+    color: var(--main-color);
+ }
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+

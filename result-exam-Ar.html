@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="Ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Smart Exam</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/SMART EXAM.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/auth.css" rel="stylesheet">
+    <link href="assets/css/addtion.css" rel="stylesheet">
+    <!-- =======================================================
+    * Template Name: FlexStart - v1.9.0
+    * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class=" d-flex  justify-content-between align-content-center">
+        <a href="Home Ar.html" class="logo d-flex align-items-center px-1">
+          <span>SmartExam</span>
+          <img src="assets/img/SMART EXAM.png" alt="">
+          
+        </a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="Home Ar.html">الصفحة الرايسية</a></li>
+            <li><a class="nav-link scrollto" href="Home Ar.html">من نحن</a></li>
+            <li><a class="nav-link scrollto" href="contact-Ar.html">اتصل بنا</a></li>
+            <li><a class="nav-link scrollto" href="result-exam-En.html">En</a></li>
+            <li><a class="nav-link scrollto dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="avtar-img" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                  class="rounded-circle" height="22" alt="Avatar" loading="lazy" />
+              </a>
+
+              <div class="dropdown-menu" id="custom-dropdown-menu" aria-labelledby="dropdownMenuLink" >
+                <a class="dropdown-item" style="padding-right: 20px;" href="profile-Ar.html">حسابي</a>
+                <a class="dropdown-item" style="padding-right: 20px;"href="#">الضبط</a>
+                <a class="dropdown-item" style="padding-right: 20px;"href="#">تسجيل الخروج</a>
+              </div>
+
+              </a>
+
+
+            </li>
+
+
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </nav>
+
+
+      </div>
+    </div>
+
+  </header>
+
+  <main class="test-result-style">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero ">
+      <div class="container">
+
+        <div class="row d-flex justify-content-center align-content-center">
+          <div class="col-12 text-center">
+            <h2>نتيجة الاختبار التجريبي</h2>
+          </div>
+          <div class="card col-lg-6 col-md-8 col-sm">
+            <div class="card-body">
+              <div class="col d-flex justify-content-between">
+                <h4>الدرجة النهائية</h4>
+                <h4> <span id="fn-score"></span> / <span id="num-of-quesion"></span></h4>
+              </div>
+              <div class="col d-flex justify-content-between">
+                <h4>اسئلة الصح \ الخطاء</h4>
+                <h4><span id="tf-score"></span> /<span id="num-of-tf-quesion"></span></h4>
+              </div>
+              <div class="col d-flex justify-content-between">
+                <h4>اسئلة الاختيار المتعدد</h4>
+                <h4><span id="mc-score"></span> /<span id="num-of-mc-quesion"></span></h4>
+              </div>
+
+              <div class="col d-flex justify-content-between">
+                <h4>الاسئلة الغير محلولة</h4>
+                <h4><span id="us-question">7</span></h4>
+              </div>
+
+              <div class="col d-flex justify-content-between">
+                <h4>وقت البدء</h4>
+                <h4><span id="started-time"></span></h4>
+              </div>
+              <div class="col d-flex justify-content-between">
+                <h4>وقت الانتهاء</h4>
+                <h4><span id="finshed-time"></span></h4>
+              </div>
+
+
+              <div class="col d-flex justify-content-between">
+                <h4>الوقت المستغرق</h4>
+                <h4><span id="time-taken"></span></h4>
+              </div>
+              <div class="col d-flex justify-content-between">
+                <h4>عدد مرات الحضور </h4>
+                <h4> 2 / <span id="num-of-attend"></span></h4>
+              </div>
+              <div class="col py-1 d-flex justify-content-between">
+                <a href="exam-review-Ar.html"
+                  class="review-btn  btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <i class="bi bi-arrow-right"></i>
+                  <span>مراجعة الامتحان</span>
+                
+                </a>
+                <a id="re-exam"
+                  class="re-enter-btn btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <i class="bi bi-arrow-right"></i>
+                  <span>اعادة الامتحان</span>
+                  
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-center ">
+            <a href="final-start-exam-Ar.html"
+              class="final-exam-btn btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <i class="bi bi-arrow-right"></i>
+              <span>الاختبار النهائي</span>
+            </a>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+
+    <!-- End Hero -->
+
+
+
+  </main>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/result-exam-En.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
